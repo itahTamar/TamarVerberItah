@@ -1,14 +1,19 @@
-import Navbar from '../component/Navbar'
+import AboutMe from "../component/AboutMe";
+import ContactMe from "../component/ContactMe";
+import MyProjects from "../component/MyProjects";
+import Navbar from "../component/Navbar";
 
 const LandingPage = () => {
   return (
     <>
-    <Navbar/>
-    <div className="container-about">About Me</div>
-    <div className="container-projects">My Projects</div>
-    <div className="container-contact">Contact Me</div>
+      <Navbar />
+      <div className="container">
+        <AboutMe />
+        <MyProjects />
+        <ContactMe />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default LandingPage
+export default LandingPage;
